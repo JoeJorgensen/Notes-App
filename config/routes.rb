@@ -3,6 +3,18 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 namespace :api do
+
+  get 'notes', to: 'notes#index'
+  get 'notes/:id', to: 'notes#show'
+  post 'notes', to: 'notes#create'
+  put 'notes/:id', to: 'notes#update'
+  delete 'notes/:id', to: 'notes#destroy'
+
+
+
+
+
+
    put 'users/update_image', to: 'users#update_image'
    get 'braintree_token', to: 'braintree#token'
    post 'payment', to: 'braintree#payment'

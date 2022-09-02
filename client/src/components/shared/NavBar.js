@@ -26,7 +26,7 @@ const NavBar = ()=>{
 
 
             {/* <Badge style={{color: 'white'}} >Feed</Badge> */}
-            <Badge><Link to ='/feed' style={{color: 'white'}}>Feed </Link></Badge>
+            <Badge><Link to ='/feed' style={{color: 'white'}}>Notes </Link></Badge>
 
               </>  
               )
@@ -128,7 +128,7 @@ const renderPayment= ()=>{
         <div>
              <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
   <Container fluid>
-    <Navbar.Brand href="/">Starter App</Navbar.Brand>
+    <Navbar.Brand href="/">Notes</Navbar.Brand>
 
         <NavDropdown 
           id="nav-dropdown-dark-example"
